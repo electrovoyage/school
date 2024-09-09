@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'rubik';
+    src:url('rubikfont/Rubik-SemiBold.woff2') format('woff2'),
+        url('rubikfont/Rubik-SemiBold.woff') format('woff'),
+        url('rubikfont/Rubik-SemiBold.ttf') format('truetype'),
+        /*GitHub Pages fixes*/
+        url('Rubik-SemiBold.woff2') format('woff2'),
+        url('Rubik-SemiBold.woff') format('woff'),
+        url('Rubik-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'rubik';
+    src:url('rubikfont/Rubik-Regular.woff2') format('woff2'),
+        url('rubikfont/Rubik-Regular.woff') format('woff'),
+        url('rubikfont/Rubik-Regular.ttf') format('truetype'),
+        /*GitHub Pages fixes*/
+        url('Rubik-Regular.woff2') format('woff2'),
+        url('Rubik-Regular.woff') format('woff'),
+        url('Rubik-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.top-bar a:not(:first-child)::before {
+    font-weight: initial;
+    content: '|';
+    padding-right: 15px;
+    color: white;
+}
+
+.image {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 15px; /* Space between link and image */
+    width: 24px;
+    height: 24px;
+}
+
+table {
+    width: 80%; /* Adjust the width as needed */
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners are visible */
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-family: rubik;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    width: 33%;
+    height: 40px;
+    overflow: visible; /* Allow overflow text to be visible */
+    word-wrap: break-word; /* Break long words onto the next line */
+}
+
+th {
+    background-color: #4c63af;
+    color: white;
+}
+thead th {
+    background: linear-gradient(to top, #4c63af, rgb(118, 189, 255)); /* Gradient background for the entire row */
+}
+tr:nth-child(odd):hover {
+    background-color: #f1f1f1;
+}
+tr:nth-child(even):hover {
+    background-color: #e1e1e1;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+    }
+}
