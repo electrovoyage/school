@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'rubik';
-    src:url('https://electrovoyage.github.io/school/assets/rubikfont/Rubik-SemiBold.woff2') format('woff2'),
-        url('https://electrovoyage.github.io/school/assets/rubikfont/Rubik-SemiBold.woff') format('woff'),
-        url('https://electrovoyage.github.io/school/assets/rubikfont/Rubik-SemiBold.ttf') format('truetype'),
+    src:url('https://electrovoyage.github.io/cdn/fonts/Rubik-SemiBold.woff2') format('woff2'),
+        url('https://electrovoyage.github.io/cdn/fonts/Rubik-SemiBold.woff') format('woff'),
+        url('https://electrovoyage.github.io/cdn/fonts/Rubik-SemiBold.ttf') format('truetype'),
         /*GitHub Pages fixes*/
         url('Rubik-SemiBold.woff2') format('woff2'),
         url('Rubik-SemiBold.woff') format('woff'),
@@ -13,9 +13,9 @@
 
 @font-face {
     font-family: 'rubik';
-    src:url('https://electrovoyage.github.io/school/assets/rubikfont/Rubik-Regular.woff2') format('woff2'),
-        url('https://electrovoyage.github.io/school/assets/rubikfont/Rubik-Regular.woff') format('woff'),
-        url('https://electrovoyage.github.io/school/assets/rubikfont/Rubik-Regular.ttf') format('truetype'),
+    src:url('https://electrovoyage.github.io/cdn/fonts/Rubik-Regular.woff2') format('woff2'),
+        url('https://electrovoyage.github.io/cdn/fonts/Rubik-Regular.woff') format('woff'),
+        url('https://electrovoyage.github.io/cdn/fonts/Rubik-Regular.ttf') format('truetype'),
         /*GitHub Pages fixes*/
         url('Rubik-Regular.woff2') format('woff2'),
         url('Rubik-Regular.woff') format('woff'),
